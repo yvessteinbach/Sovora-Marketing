@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.16 392.26">
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g>
+      <rect x="196.16" width="50" height="100"/>
+      <rect x="145.93" y="10" width="40" height="100"/>
+      <rect x="105.7" y="40" width="30" height="100"/>
+      <rect x="75.46" y="80" width="20" height="100"/>
+      <rect x="55.23" y="120" width="10" height="100"/>
+      <rect x="40" y="170" width="5" height="100"/>
+      <rect y="292.26" width="50" height="100" transform="translate(50 684.51) rotate(-180)"/>
+      <rect x="60.23" y="282.26" width="40" height="100" transform="translate(160.46 664.51) rotate(-180)"/>
+      <rect x="110.46" y="252.26" width="30" height="100" transform="translate(250.93 604.51) rotate(-180)"/>
+      <rect x="150.7" y="212.26" width="20" height="100" transform="translate(321.39 524.51) rotate(-180)"/>
+      <rect x="180.93" y="172.26" width="10" height="100" transform="translate(371.85 444.51) rotate(-180)"/>
+      <rect x="201.16" y="122.26" width="5" height="100" transform="translate(407.32 344.51) rotate(-180)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+@layer base {
+  h1 {
+    font-size: 47px;
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+  p,
+  span,
+  a {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (width >= 40rem) {
+    h1 {
+      font-size: 75px;
+      line-height: 0.855;
+      letter-spacing: -3.65px;
+    }
+    h2 {
+      font-size: 48px;
+    }
+  }
+}
+
+@layer components {
+  .pixel-sweep-button--primary {
+    --pixel-sweep-base: var(--button-sweep-primary-base);
+    --pixel-sweep-fill: var(--button-sweep-primary-fill);
+    --pixel-sweep-shimmer: var(--button-sweep-primary-shimmer);
+    border: 0;
+  }
+  .pixel-sweep-button--secondary {
+    --pixel-sweep-base: var(--button-sweep-secondary-base);
+    --pixel-sweep-fill: var(--button-sweep-secondary-fill);
+    --pixel-sweep-shimmer: var(--button-sweep-secondary-shimmer);
+    border: 0;
+  }
+  .pixel-sweep-button {
+    background: var(--pixel-sweep-base);
+  }
+  .button-primary {
+    border: 1px solid var(--color-ink-10);
+    background: var(--color-white);
+    color: var(--color-text-strong);
+  }
+  .button-primary:hover {
+    transform: translateY(-0.125rem);
+    background: var(--color-surface-blue-muted);
+  }
+  .button-secondary {
+    border: 1px solid currentColor;
+    background: transparent;
+    color: white;
+  }
+  .button-secondary:hover {
+    transform: translateY(-0.125rem);
+    background: var(--color-white-12);
+  }
+  .button-text-dark {
+    color: var(--color-text-strong);
+  }
+  .button-text-light {
+    color: white;
+  }
+  .button-text-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-size 220ms ease;
+  }
+  .button-text-dark:hover,
+  .button-text-light:hover,
+  .button-text-dark:focus-visible,
+  .button-text-light:focus-visible {
+    background-size: 0 1px;
+  }
+  .button-text-dark:hover .button-text-underline,
+  .button-text-light:hover .button-text-underline,
+  .button-text-dark:focus-visible .button-text-underline,
+  .button-text-light:focus-visible .button-text-underline {
+    background-size: 100% 1px;
+  }
+  .button-primary:focus-visible,
+  .button-secondary:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+  }
+}
